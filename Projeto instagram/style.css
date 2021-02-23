@@ -1,3 +1,9 @@
+:root{
+    --branco:#ffffff;
+    --azul-link: #0095f6;
+    --cinza: rgb(160, 160, 160);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -51,7 +57,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--branco);
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
@@ -78,24 +84,24 @@ body{
 }
 
 .continue-login{
-    background-color: #0095f6;
-    color: #ffffff;
+    background-color: var(--azul-link);
+    color: var(--branco);
     padding: 8px;
     border-radius: 4px;
 
 }
 
 .not-perfil{
-    color: rgb(160, 160, 160);
+    color: var(--cinza);
 }
 
 
 .link-blue{
-    color: #0095f6;
+    color: var(--azul-link);
 }
 
 .downloads{
-    color: rgb(160, 160, 160);
+    color: var(--cinza);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +143,7 @@ body{
 
 @media (max-width: 650px){
     body{
-        background-color: #ffffff;
+        background-color: var(--branco);
     }
     .instagram-main{
         width: 90%;

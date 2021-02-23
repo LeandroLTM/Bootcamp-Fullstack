@@ -12,14 +12,20 @@
 
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
+
+/* container*/
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.container {
+    margin-left: 20px;
 }
 
 header .logo-netflix{
@@ -52,12 +58,56 @@ header nav a:hover{   /*evento de passar o mause*/
     align-items: flex-start;
 }
 
+.filme-principal .container{
+    width: 80%;
+}
+
 .filme-principal .descricao{
+    margin-top: 10px;
     margin-bottom:40px;
 }
 
-.titulo{
+.filme-principal .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*botão*/
+
+.botao{
+    background-color: rgba(0,0,0,0.5); /*rgba e usado para efeito de transparencia*/
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*mudar de sata para mão quando passar o mause*/
+    transition: .3s ease all; /*suavisar a transição*/
 }
 
 
+.botao:hover{                       /*evento de passar o mause*/
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+/*carrosel*/
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
